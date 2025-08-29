@@ -10,8 +10,36 @@ namespace secretcode_premakumar
     {
         static void Main(string[] args)
         {
+            // afficher le titre
             Title();
 
+            // afficher les règles
+            Rules();
+
+
+
+
+
+
+
+
+            Console.ReadLine();
+        }
+
+        // pour le titre
+        static void Title()
+        {
+            Console.WriteLine("╔═════════════ Agashae Premakumar ═══════════╗");
+            Console.WriteLine("║                                            ║");
+            Console.WriteLine("║    Bienvenue dans le jeu : Secret Code     ║");
+            Console.WriteLine("║                                            ║");
+            // \n pour faire un retour à la ligne
+            Console.WriteLine("╚════════════════════════════════════════════╝\n");
+
+        }
+
+        static void Rules()
+        {
             Console.WriteLine("Un code secret avec 4 chiffres est généré.");
             // \n pour faire un retour à la ligne
             Console.WriteLine("À vous de le découvrir en 10 essais maximum !\n");
@@ -27,7 +55,7 @@ namespace secretcode_premakumar
             Console.Write(carreAscii);
             Console.ResetColor();
             Console.Write(" : Chiffre bien placé\n");
-            Console.ForegroundColor= ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write(carreAscii);
             Console.ResetColor();
             Console.WriteLine(" : Chiffre correct mais mal placé");
@@ -60,25 +88,10 @@ namespace secretcode_premakumar
             Console.WriteLine("Appuie sur un touche pour commencer...");
 
 
-
-
-
-
-
-
-            Console.ReadLine();
-        }
-
-        // pour le titre
-        static void Title()
-        {
-            Console.WriteLine("╔═════════════ Agashae Premakumar ═══════════╗");
-            Console.WriteLine("║                                            ║");
-            Console.WriteLine("║    Bienvenue dans le jeu : Secret Code     ║");
-            Console.WriteLine("║                                            ║");
-            // \n pour faire un retour à la ligne
-            Console.WriteLine("╚════════════════════════════════════════════╝\n");
+            
+            if
 
         }
+
     }
 }
