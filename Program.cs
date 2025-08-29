@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -111,8 +112,42 @@ namespace secretcode_premakumar
             Console.WriteLine(" Tapez 1 pour débutant (1 à 6, sans doublons, indices visibles)");
             Console.WriteLine(" Tapez 2 pour l'intermédiaire (1 à 6, sans doublons, indices discrets)");
             Console.WriteLine(" Tapez 3 pour l'avancé (1 à 8, avec doublons, indices visibles)");
-            Console.WriteLine(" Tapez 4 pour l'expert (1 à 9, avec doublons, indices discrets)");
-            Console.WriteLine("Votre choix(1 - 4) :");
+            Console.WriteLine(" Tapez 4 pour l'expert (1 à 9, avec doublons, indices discrets)\n");
+            Console.Write("Votre choix (1 - 4) : ");
+
+            bool check = false;
+
+            do
+            {
+                string level = Console.ReadLine();
+
+                try
+                {
+                    int levelInt = Convert.ToInt32(level);
+                    check = false;
+
+                }
+                catch
+                {
+                    check = true;
+
+                }
+
+
+            } while (check=true);
+
+            Console.WriteLine("ça marche");
+
+
+
+
+       
+            
+
+
+
+
+
 
 
         }
