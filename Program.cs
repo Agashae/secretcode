@@ -88,8 +88,32 @@ namespace secretcode_premakumar
             Console.WriteLine("Appuie sur un touche pour commencer...");
 
 
-            
-            if
+
+
+            Console.ReadKey();
+
+            // aller au choix du level
+            LevelChoice();
+
+
+
+        }
+
+        static void LevelChoice()
+        {
+            // nettoyer la console
+            Console.Clear();
+
+
+            Console.WriteLine("=== SECRET CODE ===\n");
+
+            Console.WriteLine("Choisir un niveau :");
+            Console.WriteLine(" Tapez 1 pour débutant (1 à 6, sans doublons, indices visibles)");
+            Console.WriteLine(" Tapez 2 pour l'intermédiaire (1 à 6, sans doublons, indices discrets)");
+            Console.WriteLine(" Tapez 3 pour l'avancé (1 à 8, avec doublons, indices visibles)");
+            Console.WriteLine(" Tapez 4 pour l'expert (1 à 9, avec doublons, indices discrets)");
+            Console.WriteLine("Votre choix(1 - 4) :");
+
 
         }
 
